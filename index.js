@@ -1,3 +1,5 @@
-const alerta = 'Olá';
-alerta = 2025;
+function enviar(){
+let alerta = 'Olá';
+alerta = document.getElementById("nome").value;
 alert("mensagem de aviso: " + alerta)
+}
