@@ -10,21 +10,35 @@
     <table class="inicio">
         <tr class="linha">
             <td class="form">
-                <form id="formulario" action="submit" onsubmit="enviar()" method="post">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="fone">Email</label>
-                    <input type="text" name="e-mail" id="e-mail">
-                    <label for="fone">Telefone para contato</label>
-                    <input type="text" name="fone" id="fone">
-                    <label for="mensagem">Escreva sua mensagem</label>
-                    <input type="text" name="mensagem" id="mensagem">
-                    <label for="data_cadastro">Data de cadastro</label>
-                    <input type="text" name="data_cadastro" id="data_cadastro">
-                    <label for="tipo_contato">Selecione a forma de contato</label>
-                    <input type="text" name="tipo_contato" id="tipo_contato">
-                    <button type="submit" id="enviar">Enviar</button>
-                    <button type="reset" id="limpar">Limpar</button>
+                <form action="" onsubmit="submeter()" method="post">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="fone">Telefone para contato</label>
+                        <input type="tel" name="fone" id="fone">
+                    </div>
+                   <div>
+                        <label for="mensagem">Escreva sua mensagem</label>
+                        <input type="text" name="mensagem" id="mensagem">
+                   </div>
+                    <div>
+                        <label for="data_cadastro">Data de cadastro</label>
+                        <input type="date" name="data_cadastro" id="data_cadastro">
+                    </div>
+                    <div>
+                        <label for="tipo_contato">Selecione a forma de contato</label>
+                        <input type="text" name="tipo_contato" id="tipo_contato">
+                    </div>
+                    <div>
+                        <button type="submit" id="enviar">Enviar</button>
+                        <button type="reset" id="limpar">Limpar</button>
+                    </div>
                 </form>
             </td>
             <td class="estr_grid">
@@ -37,10 +51,13 @@
                         <td id="g_cadastro">Cadastro</td>
                         <td id="g_contato">Tipo contato</td>
                     </tr>
+                    <tbody id ="dados">
+
+                    </tbody>
                 </table>
             </td>
         </tr>
     </table>
 </body>
-<script type="javasript" src="index.js"></script>
+<script type="text\javasript" src="index.js"></script>
 </html>
